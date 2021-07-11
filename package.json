@@ -1,0 +1,14 @@
+{
+  "name": "LandingPage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn run parcel src/**.html --out-dir dist/dev",
+    "build": "yarn run parcel build src/**.html --out-dir dist/build"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  }
+}
