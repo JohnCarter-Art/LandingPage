@@ -4,7 +4,7 @@
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn run parcel src/**.html --out-dir dist/dev",
+    "dev": "yarn run parcel src/index.html --out-dir dist/dev",
     "build": "yarn run parcel build src/**.html --out-dir dist/build"
   },
   "devDependencies": {
