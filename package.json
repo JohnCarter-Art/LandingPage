@@ -1,7 +1,7 @@
 {
   "name": "LandingPage",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.html",
   "license": "MIT",
   "scripts": {
     "dev": "yarn run parcel src/**.html --out-dir dist/dev",

@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.scss">
+    <link rel="stylesheet" href="styles/styles.scss">
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="hero"></section>
@@ -20,5 +25,15 @@
         <section class="request"></section>
     </main>
     <footer></footer>
+    <section>
+        <h2>Личный кабинет</h2>
+            <p>Введите логин и пароль</p>
+            <form>
+                <input type="text"/>
+                <input type="password"/>
+                <input type="submit"/>
+            </form>
+            <button type="button">Закрыть</button>
+    </section>
 </body>
 </html>
