@@ -1,3 +1,4 @@
+/*HEAD*/
 /* montserrat-regular - latin_cyrillic */
 @font-face {
     font-family: 'Montserrat';
@@ -7,7 +8,7 @@
          url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
 }
-  /* montserrat-700 - latin_cyrillic */
+/* montserrat-700 - latin_cyrillic */
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -22,9 +23,35 @@ body {
     color: #FFFFFF;
     margin: 0px 195px;
     padding: 0;
-
 }
-/*Site Navigation*/
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #FFFFFF;
+}
+a:hover, a:focus {
+    background-color: #252B42;
+}
+h1 {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+/*END OF HEAD*/
+
+/*HEADER*/
 .main-navigation {
     display: grid;
 }
@@ -40,45 +67,10 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-section.hero .tableRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px;
-}
-section.features .featuresTableCellUl {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px;
-}
-h1 {
-    font-weight: 800;
-    font-size: 58px;
-    line-height: 80px;
-    letter-spacing: 0.2px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-a {
-    color: #FFFFFF;
-}
-a:hover, a:focus {
-    background-color: #252B42;
-}
 header.navigation {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-}
-.page {
-    height: 100%;
-}
-.page-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
 }
 nav {
     margin: 10px 10px 0px 10px;
@@ -96,8 +88,22 @@ nav ul li a:link, nav ul li a:visited {
     border-bottom: none;
     font-weight: bold;
 }
-nav ul li.selected {
-    background-color: #c8b99c;
+/*END OF HEADER*/
+
+/*MAIN*/
+/*HERO*/
+section.hero .tableRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+}
+/*END OF HERO*/
+
+/*FEATURES*/
+section.features .featuresTableCellUl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
 }
 li.link-people {
     list-style-image: url(../assets/Vector.png);
@@ -114,3 +120,5 @@ section.features p.caption {
     font-size: 14px;
     line-height: 20px;
 }
+/*END OF FEATURES*/
+/*END OF MAIN*/
