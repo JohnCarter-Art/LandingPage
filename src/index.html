@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Finance website</title>
     <link text="text/css" rel="stylesheet" href="/styles/styles.scss">
     <script type="text/javascript" src="script/login.js"></script>
 </head>
-<body>
+<body class="page-body">
 
-    <header class="navigation">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#hero">Home</a>
-                </li>
-                <li>
-                    <a href="product.html">Product</a>
-                </li>
-                <li>
-                    <a href="#pricing">Pricing</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <a class="login-link" href="#login">Login</a>
-            <a class="member" href="#member">Become a member &rarr;</a>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <div class="main-header-bar">
+                <div class="main-navigation-wrapper">
+                    <a href="#">Brand name</a> 
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#hero">Home</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Product</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="user-navigation">
+                        <a class="login-link" href="#login">Login</a>
+                        <a class="member" href="#member">Become a member &rarr;</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="center">
+    <main class="container">
         <section class="hero" id="hero">
             <div class="tableContainer">
                 <div class="tableRow">
@@ -47,41 +54,34 @@
         </section>
         <section class="features">
             <h2>Better Strategy With Quality Business</h2>
-            <p>
+            <p class="caption">
                 Problems trying to resolve the conflict between the two major 
                 realms of Classical physics: Newtonian mechanics
             </p>
-            <div class="tableContainer">
-                <div class="tableCell">
-                    <ul>
-                        <li>
+            <div class="featuresTable">
+                <div class="featuresTableCell">
+                    <ul class="featuresTableCellUl">
+                        <li class="link-people">
                             <h5>Investment Trading</h5>
                             <p>the quick fox jumps over the lazy dog</p>
                         </li>
-                        <li>
-                            <h5>Taxation Planning</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                    </ul>
-                <div class="tableCell">
-                    <ul>
-                        <li>
+                        <li class="link-people">
                             <h5>Support On Raising Funds</h5>
                             <p>the quick fox jumps over the lazy dog</p>
                         </li>
-                        <li>
-                            <h5>Save money and tim</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tableCell">
-                    <ul>
-                        <li>
+                        <li class="link-people">
                             <h5>Financial Analysis</h5>
                             <p>the quick fox jumps over the lazy dog</p>
                         </li>
-                        <li>
+                        <li class="link-people">
+                            <h5>Taxation Planning</h5>
+                            <p>the quick fox jumps over the lazy dog</p>
+                        </li>
+                        <li class="link-people">
+                            <h5>Save money and tim</h5>
+                            <p>the quick fox jumps over the lazy dog</p>
+                        </li>
+                        <li class="link-people">
                             <h5>Outsourced Consulting Business</h5>
                             <p>the quick fox jumps over the lazy dog</p>
                         </li>
@@ -99,7 +99,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="page-footer">
         <section>
             <h2>Get in Touch</h2>
             <p>the quick fox jumps over the lazy dog</p>

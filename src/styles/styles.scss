@@ -16,17 +16,39 @@
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
-/*Site Navigation*/
 body {
     background-color: #252B42;
     font-family: 'Montserrat';
     color: #FFFFFF;
+    margin: 0px 195px;
+    padding: 0;
+
 }
-section.hero {
+/*Site Navigation*/
+.main-navigation {
+    display: grid;
+}
+.main-navigation li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+.main-navigation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    background-color: #252B42;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+section.hero .tableRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    padding: 80px 0px;
+    padding: 0px;
+}
+section.features .featuresTableCellUl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
 }
 h1 {
     font-weight: 800;
@@ -34,6 +56,61 @@ h1 {
     line-height: 80px;
     letter-spacing: 0.2px;
 }
-section.features div.tableCell {
-    display: table-cell;
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #FFFFFF;
+}
+a:hover, a:focus {
+    background-color: #252B42;
+}
+header.navigation {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+nav {
+    margin: 10px 10px 0px 10px;
+}
+nav ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+ }
+nav ul li {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+nav ul li a:link, nav ul li a:visited {
+    border-bottom: none;
+    font-weight: bold;
+}
+nav ul li.selected {
+    background-color: #c8b99c;
+}
+li.link-people {
+    list-style-image: url(../assets/Vector.png);
+    padding-top: 5px;
+    margin-left: 20px;
+}
+section.features h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+}
+section.features p.caption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
 }
