@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Finance website</title>
     <link text="text/css" rel="stylesheet" href="/styles/styles.scss">
     <script type="text/javascript" src="script/login.js"></script>
 </head>
-<body class="page-body">
+<body>
 
     <header class="header container">
         <nav class="navigation">
@@ -26,80 +26,88 @@
                 </li>
             </ul>
             <div class="navigation__auth auth">
-                <button class="auth__login" href="#login">Login</a>
-                <button class="auth__member button" href="#member">Become a member &rarr;</a>
+                <button class="auth__login_button button" href="#login">Login</a>
+                <button class="auth__member_button button" href="#member">Become a member &rarr;</a>
             </div>
         </nav>
     </header>
 
-    <main class="container1">
+    <main class="container">
+
         <section class="hero" id="hero">
-            <div class="tableContainer">
-                <div class="tableRow">
-                    <section class="info">
-                        <h1>Financial<br/>Assistance With<br/>True Purpose</h1>
-                        <p>We know how large objects will act, but things on a small scale.</p>
-                        <button class="button-financial-get" type="button">Get Quote Now</button>
-                        <button class="button-financial-learn" type="button">Learn More</button>
-                    </section>
-                    <section class="img">
-                        <img src="./assets/mockup.png" class="iPhone" title="iPhone 12 Red">
-                    </section>
-                </div>
-            </div>
+            <section class="hero__information">
+                <h1 class="hero__item">Financial<br/>Assistance With<br/>True Purpose</h1>
+                <p>We know how large objects will act, <br/> but things on a small scale.</p>
+                <button class="button-financial-get" type="button">Get Quote Now</button>
+                <button class="button-financial-learn" type="button">Learn More</button>
+            </section>
+            <section class="hero__image">
+                <img src="./assets/mockup.png" class="hero__iPhone" title="iPhone 12 Red">
+            </section>
         </section>
+
         <section class="features">
-            <h2>Better Strategy With Quality Business</h2>
-            <p class="caption">
-                Problems trying to resolve the conflict between the two major 
-                realms of Classical physics: Newtonian mechanics
-            </p>
-            <div class="featuresTable">
-                <div class="featuresTableCell">
-                    <ul class="featuresTableCellUl">
-                        <li class="link-people">
-                            <h5>Investment Trading</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                        <li class="link-people">
-                            <h5>Support On Raising Funds</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                        <li class="link-people">
-                            <h5>Financial Analysis</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                        <li class="link-people">
-                            <h5>Taxation Planning</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                        <li class="link-people">
-                            <h5>Save money and tim</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                        <li class="link-people">
-                            <h5>Outsourced Consulting Business</h5>
-                            <p>the quick fox jumps over the lazy dog</p>
-                        </li>
-                    </ul>
-                </div>
+            <section class="features__header">
+                <h2 class="features__item">Better Strategy With Quality Business</h2>
+                <p class="features__caption">
+                    Problems trying to resolve the conflict between the two major 
+                    realms of Classical physics: Newtonian mechanics
+                </p>
+            </section>
+            <div class="features__table">
+                <ul class="features__row">
+                    <li class="col-md-4">
+                        <h5>Investment Trading</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                    <li class="col-md-4">
+                        <h5>Support On Raising Funds</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                    <li class="col-md-4">
+                        <h5>Financial Analysis</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                </ul>
+                <ul class="features__row">    
+                    <li class="col-md-4">
+                        <h5>Taxation Planning</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                    <li class="col-md-4">
+                        <h5>Save money and tim</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                    <li class="col-md-4">
+                        <h5>Outsourced Consulting Business</h5>
+                        <p>the quick fox jumps over the lazy dog</p>
+                    </li>
+                </ul>
             </div>
         </section>
+
         <section class="feedback">
+            <h2 class="feedback__item">What Clients Say</h2>
+            <p class="feedback__paragraph">Problems trying to resolve the conflict between the two 
+            major realms of Classical physics: Newtonian mechanics</p>
         </section>
+
         <section class="download" id="download">
         </section>
+
         <section class="pricing" id="pricing">
         </section>
+
         <section class="request">
         </section>
+
     </main>
 
-    <footer class="page-footer">
-        <section>
-            <h2>Get in Touch</h2>
-            <p>the quick fox jumps over the lazy dog</p>
-            <ul>
+    <footer class="footer">
+        <section class="footer__link">
+            <h2 class="footer__item">Get in Touch</h2>
+            <p class="footer__paragraph">the quick fox jumps over the lazy dog</p>
+            <ul class="footer__list" class="footer__list">
                 <li>
                     <a href="#">Facebook</a>
                 </li>
@@ -110,10 +118,10 @@
                     <a href="#">Twitter</a>
                 </li>
             </ul>
-        </section>
+        </section class="footer__information">
         <section>
-            <h2>Company info</h2>
-            <ul>
+            <h2 class="footer__item">Company info</h2>
+            <ul class="footer__list">
                 <li>
                     <a href="about.html">About Us</a>
                 </li>
@@ -128,9 +136,9 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
+        <section class="footer__features">
+            <h2 class="footer__item">Features</h2>
+            <ul class="footer__list">
                 <li>
                     <a href="marketing.html">Business Marketing</a>
                 </li>
@@ -145,9 +153,9 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Resources</h2>
-            <ul>
+        <section class="footer__others">
+            <h2 class="footer__item">Resources</h2>
+            <ul class="footer__list">
                 <li>
                     <a href="#download">IOS &amp; Android</a>
                 </li>
@@ -162,12 +170,18 @@
                 </li>
             </ul>
         </section>
+        <section role="list" class="footer__list">
+            <h2 class="footer__item">Resources</h2>
+            <div role="listitem">List item 1</div>
+            <div role="listitem">List item 2</div>
+            <div role="listitem">List item 3</div>
+          </section>
     </footer>
     
     <section class="cabinet modal-login">
         <h2>Личный кабинет</h2>
             <p>Введите логин и пароль</p>
-            <form>
+            <form method="post">
                 <p>
                     <table>
                         <tbody>

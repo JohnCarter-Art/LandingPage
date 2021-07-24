@@ -1,9 +1,7 @@
 .container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     max-width: 1050px;
     width: 100%;
-}
-.row {
-    color: alpha($color: #000000);
 }

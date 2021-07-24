@@ -18,21 +18,16 @@
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
+html {
+    height: 100%;
+}
 body {
     background-color: #252B42;
     font-family: 'Montserrat';
     color: #FFFFFF;
     margin: 0px 195px;
     padding: 0;
-}
-.page {
-    height: 100%;
-}
-.page-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+    min-height: 100%; 
 }
 img {
     max-width: 100%;
@@ -45,12 +40,6 @@ a {
 a:hover, a:focus {
     background-color: #252B42;
 }
-h1 {
-    font-weight: 800;
-    font-size: 58px;
-    line-height: 80px;
-    letter-spacing: 0.2px;
-}
 /*END OF HEAD*/
 
 @import "./grid.scss";
@@ -59,6 +48,7 @@ h1 {
 .header {
     display: flex;
     padding: 19px 0 33px;
+    margin: 0px 59px;
 }
 .navigation {
     display: flex;
@@ -90,33 +80,81 @@ h1 {
 
 /*MAIN*/
 /*HERO*/
-section.hero .tableRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.hero {
+    display: flex;
+    justify-content: space-between;
     padding: 0px;
+    
+    &__item {
+    font-weight: 800;
+    @include fs-lh (58, 80);
+    letter-spacing: 0.2px;
+    }
 }
 /*END OF HERO*/
 
 /*FEATURES*/
-section.features .featuresTableCellUl {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.features__header {
+    text-align: center;
+    
+    &__caption {
+        font-weight: 500;
+        font-size: 70%;
+        line-height:   20px;
+        color: #737373;
+    }
+    &__item {
+        font-weight: bold;
+        @include fs-lh (40, 57);
+    }
+}
+.features__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0px;
 }
-li.link-people {
+.features__table li.col-md-4 {
     list-style-image: url(../assets/Vector.png);
     padding-top: 5px;
     margin-left: 20px;
 }
-section.features h2 {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 57px;
-}
-section.features p.caption {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-}
 /*END OF FEATURES*/
+
+/*FEEDBACK*/
+
+/*END OF FEEDBACK*/
+
+/*DOWNLOAD*/
+/*END OF DOWNLOAD*/
+
+/*PRICING*/
+/*END OF PRICING*/
+
+/*REQUEST*/
+/*END OF REQUEST*/
 /*END OF MAIN*/
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        font-weight: bold;
+        @include fs-lh (24, 32);
+    }
+    &__paragraph {
+        font-weight: 500;
+        @include fs-lh (14, 20);
+    }
+    &__list {
+        font-weight: 500;
+        @include fs-lh (14, 24);
+        list-style-type: none;
+        padding: 0;
+        margin-left: 0px;
+    }
+}
+/*END OF FOOTER*/
