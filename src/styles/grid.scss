@@ -1,7 +1,44 @@
+@use 'sass:math';
+
+$gutter: 15px;
+
 .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1050px;
+    max-width: 1044px;
     width: 100%;
+    padding: 0 $gutter;
+    outline: 1px solid red;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 -#{$gutter};
+    outline: 1px solid green;
+}
+
+$breakpoints: (
+    xs: 320px,
+    sm: 600px,
+    md: 940px,
+    lg: 1200px,
+    xl: 1600px,
+);
+
+$cols: 12;
+
+@each $breakpoint, $width in $breakpoints {
+    @for $col from 1 to $cols {
+        @media (min-width: $width) {
+            .col-#{$breakpoint}-#{$col} {
+                display: flex;
+                width: math.percentage(math.div($col, $cols));
+                padding: $gutter;
+                outline: 1px solid blue;
+            }
+        }
+    }
 }

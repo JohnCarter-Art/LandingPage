@@ -18,6 +18,13 @@
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -94,7 +101,7 @@ a:hover, a:focus {
 /*END OF HERO*/
 
 /*FEATURES*/
-.features__header {
+.features {
     text-align: center;
     
     &__caption {
@@ -103,22 +110,27 @@ a:hover, a:focus {
         line-height:   20px;
         color: #737373;
     }
-    &__item {
+
+    &__title {
         font-weight: bold;
         @include fs-lh (40, 57);
     }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
 }
-.features__row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0px;
+
+.features-item {
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
 }
-.features__table li.col-md-4 {
-    list-style-image: url(../assets/Vector.png);
-    padding-top: 5px;
-    margin-left: 20px;
-}
+
 /*END OF FEATURES*/
 
 /*FEEDBACK*/
@@ -139,7 +151,8 @@ a:hover, a:focus {
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    
 
     &__item {
         font-weight: bold;
