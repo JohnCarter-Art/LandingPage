@@ -54,8 +54,7 @@ a:hover, a:focus {
 /*HEADER*/
 .header {
     display: flex;
-    padding: 19px 0 33px;
-    margin: 0px 59px;
+    padding: 19px 0 33px 0;
 }
 .navigation {
     display: flex;
@@ -92,10 +91,14 @@ a:hover, a:focus {
     justify-content: space-between;
     padding: 0px;
     
-    &__item {
-    font-weight: 800;
-    @include fs-lh (58, 80);
-    letter-spacing: 0.2px;
+    &__title {
+        font-weight: 800;
+        @include fs-lh (58, 80);
+        letter-spacing: 0.2px;
+    }
+
+    &__caption {
+        @include fs-lh (20, 30);
     }
 }
 /*END OF HERO*/
@@ -125,19 +128,105 @@ a:hover, a:focus {
 }
 
 .features-item {
+    text-align: start;
+    width: 328px;
+    height: 139px;
+
     &__col {
         display: flex;
         flex-direction: column;
+        width: 213px;
+        height: 69px;
+    }
+
+    &__logo {
+        width: 49.33px;
+        height: 37.33px;
+    }
+
+    &__title {
+        font-weight: bold;
+        @include fs-lh (16, 24);
+    }
+
+    &__caption {
+        @include fs-lh (14, 20);
     }
 }
 
 /*END OF FEATURES*/
 
 /*FEEDBACK*/
+.feedback {
+    outline: 1px solid green;
+    margin: 0;
+    padding: 0;
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
+    &__title {
+        @include fs-lh (40, 57);
+    }
+
+    &__caption {
+        @include fs-lh (14, 20);
+    }
+    
+}
+.feedback-item {
+    outline: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 153px;
+    background-color: #FFFFFF;
+    color: #252B42;
+    width: 744px;
+    height: 362px;
+    padding: 40px 35px;
+    
+
+    &__logo {
+        margin: 40px;
+        outline: 1px solid green;
+        text-align: center;
+    }
+
+    &__caption {
+        outline: 1px solid green;
+        @include fs-lh (14, 20);
+    }
+
+    &__stars {
+        outline: 1px solid green;
+        display: flex;
+        padding: 15px 0;
+        list-style-type:none;
+    }
+
+    &__title {
+        outline: 1px solid green;
+        @include fs-lh (24, 32);
+    }
+
+    &__signature {
+        outline: 1px solid green;
+        @include fs-lh (14, 24);
+    }
+
+}
 /*END OF FEEDBACK*/
 
 /*DOWNLOAD*/
+.download {
+    &__title {
+        @include fs-lh (40, 57);
+    }
+}
 /*END OF DOWNLOAD*/
 
 /*PRICING*/
