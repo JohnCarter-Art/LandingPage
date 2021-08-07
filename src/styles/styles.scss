@@ -1,3 +1,4 @@
+@import "./normalize.css";
 @import "./utils.scss";
 /*HEAD*/
 /* montserrat-regular - latin_cyrillic */
@@ -32,7 +33,7 @@ body {
     background-color: #252B42;
     font-family: 'Montserrat';
     color: #FFFFFF;
-    margin: 0px 195px;
+    margin: 0;
     padding: 0;
     min-height: 100%; 
 }
@@ -158,9 +159,11 @@ a:hover, a:focus {
 
 /*FEEDBACK*/
 .feedback {
-    outline: 1px solid green;
+
     margin: 0;
-    padding: 0;
+    padding: 80px 153px;
+    text-align: center;
+
     &__header {
         display: flex;
         justify-content: center;
@@ -177,45 +180,44 @@ a:hover, a:focus {
     
 }
 .feedback-item {
-    outline: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 80px 153px;
     background-color: #FFFFFF;
     color: #252B42;
-    width: 744px;
-    height: 362px;
+    width: 100%;
     padding: 40px 35px;
     
 
     &__logo {
-        margin: 40px;
-        outline: 1px solid green;
+        margin-bottom: 30px;
         text-align: center;
     }
 
     &__caption {
-        outline: 1px solid green;
         @include fs-lh (14, 20);
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     &__stars {
-        outline: 1px solid green;
         display: flex;
-        padding: 15px 0;
         list-style-type:none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
     }
 
     &__title {
-        outline: 1px solid green;
         @include fs-lh (24, 32);
+        margin: 0;
+        margin-bottom: 8px;
     }
 
     &__signature {
-        outline: 1px solid green;
         @include fs-lh (14, 24);
+        margin: 0;
     }
 
 }
