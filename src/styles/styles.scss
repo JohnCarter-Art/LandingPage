@@ -37,10 +37,7 @@ body {
     padding: 0;
     min-height: 100%; 
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -83,6 +80,21 @@ a:hover, a:focus {
         font-weight: 400;
     }
 }
+.auth__login_button {
+    color: white;
+    background: none;
+    border-width: 0;
+    padding: 15px 35px;
+    margin-right: 10px;
+}
+.auth__member_button {
+    color: white;
+    background: #23A6F0;
+    padding: 15px 36px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #23A6F0;
+}
 /*END OF HEADER*/
 
 /*MAIN*/
@@ -102,22 +114,42 @@ a:hover, a:focus {
         @include fs-lh (20, 30);
     }
 }
+.button-financial-get {
+    @include fs-lh (14, 24);
+    color: white;
+    background: #23A6F0;
+    padding: 15px 36px;
+    border-radius: 37px;
+    border: 1px solid #23A6F0;
+    margin-right: 10px;
+}
+.button-financial-learn {
+    @include fs-lh (14, 24);
+    color: white;
+    background: none;
+    padding: 15px 36px;
+    border-radius: 37px;
+    border: 1px solid #FFFFFF;
+    
+}
 /*END OF HERO*/
 
 /*FEATURES*/
 .features {
     text-align: center;
     
-    &__caption {
-        font-weight: 500;
-        font-size: 70%;
-        line-height:   20px;
-        color: #737373;
-    }
-
     &__title {
+        margin: 0;
         font-weight: bold;
         @include fs-lh (40, 57);
+        margin: 10px 0;
+    }
+
+    &__caption {
+        margin: 0;
+        @include fs-lh (14, 20);
+        color: #737373;
+        padding-bottom: 69px;
     }
 
     &__row {
@@ -132,6 +164,7 @@ a:hover, a:focus {
     text-align: start;
     width: 328px;
     height: 139px;
+    border: 1px solid #FFFFFF;
 
     &__col {
         display: flex;
@@ -141,16 +174,21 @@ a:hover, a:focus {
     }
 
     &__logo {
+        margin-right: 20px;
         width: 49.33px;
         height: 37.33px;
     }
 
     &__title {
+        margin: 0;
+        font-style: normal;
         font-weight: bold;
         @include fs-lh (16, 24);
+        padding-bottom: 5px;
     }
 
     &__caption {
+        margin: 0;
         @include fs-lh (14, 20);
     }
 }
@@ -171,13 +209,17 @@ a:hover, a:focus {
     }
 
     &__title {
+        margin: 0;
         @include fs-lh (40, 57);
+        margin-bottom: 10px;
     }
 
     &__caption {
+        margin: 0px;
         @include fs-lh (14, 20);
+        margin-bottom: 80px;
     }
-    
+
 }
 .feedback-item {
     display: flex;
@@ -225,9 +267,51 @@ a:hover, a:focus {
 
 /*DOWNLOAD*/
 .download {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 240px;
     &__title {
+        margin: 0;
         @include fs-lh (40, 57);
+        margin-bottom: 10px;
     }
+
+    &__caption {
+        margin: 0;
+        @include fs-lh (14, 20);
+        margin-bottom: 50px;
+    }
+}
+.download-item {
+    display: flex;
+
+
+    &__button{
+        margin: 0 10px;
+        padding: 18px 28px;
+        display: flex;
+        border: 1px solid #FFFFFF;
+        background-color: #252B42;
+        color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px 0px #0000001A;
+    }
+
+    &__icon {
+        margin: 0px;
+        margin-right: 25px;
+    }
+
+    &__caption {
+        margin: 0px;
+        @include fs-lh (14, 22);
+    }
+
+    &__caption_link {
+        margin: 0px;
+        @include fs-lh (16, 24);
+    }
+
 }
 /*END OF DOWNLOAD*/
 
