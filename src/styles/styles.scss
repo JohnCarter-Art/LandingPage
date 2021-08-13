@@ -316,9 +316,146 @@ a:hover, a:focus {
 /*END OF DOWNLOAD*/
 
 /*PRICING*/
+.pricing {
+    margin-bottom: 260px;
+    text-align: center;
+
+    &__title {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+        @include fs-lh (40,57);
+    }
+
+    &__caption {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 96px;
+        @include fs-lh (14,20);
+    }
+}
+.pricing-item {
+    display: flex;
+
+    &__description {
+        text-align: start;
+        margin-right: 30px;
+    }
+
+    &__pricing {
+        padding: 0px;
+        margin: 0px;
+        background: white;
+        padding: 50px;
+        margin-right: 30px;
+        border-radius: 10px;
+        border: 1px solid #23A6F0;    
+    }
+
+    &__title {
+        margin: 0px;
+        margin-bottom: 15px;
+        color: #23A6F0;
+        @include fs-lh (24,32);
+    }
+
+    &__caption {
+        margin: 0px;
+        color: #737373;
+        @include fs-lh (14,24);
+    }
+}
+.pricing-divide {
+
+    &__column {
+        margin-bottom: 25px;
+    }
+
+    &__money {
+        margin: 0px;
+        margin-right: 10px;
+        @include fs-lh (40,57);
+    }
+
+    &__dollar {
+        margin: 0px;
+        text-align: start;
+        @include fs-lh (14,24);
+    }
+
+    &__month {
+        margin: 0px;
+        @include fs-lh (16,24);
+    }
+    
+    &__column {
+        display: flex;
+        color: #23A6F0;
+    }
+    
+    &__button {
+        @include fs-lh (14, 22);
+        color: white;
+        background: #23A6F0;
+        padding: 15px 40px;
+        border-radius: 5px;
+        border: 1px solid #23A6F0;
+    }
+}
 /*END OF PRICING*/
 
 /*REQUEST*/
+.request {
+    margin-bottom: 134px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+        @include fs-lh (40, 57);
+    }
+
+    &__caption {
+        @include fs-lh (14, 20);
+    }
+}
+.request-book {
+    margin-left: 65px;
+    display: flex;
+    
+    &__title {
+        text-align: center;
+    }
+
+    &__form {
+        justify-content: center;
+        align-items: center;
+        padding: 40px 50px;
+        background-color: #FAFAFA;
+        color: #252B42;
+    }
+}
+.book-app{
+    
+    &__text-option {
+        @include fs-lh (14, 28);
+        color: #737373;
+    }
+
+    &__size {
+        width: 510px;
+        height: 50px;
+    }
+
+    &__button {
+    color: white;
+    background: #23A6F0;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid #23A6F0;
+    }  
+}
+
+
 /*END OF REQUEST*/
 /*END OF MAIN*/
 
