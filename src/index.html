@@ -26,8 +26,8 @@
                 </li>
             </ul>
             <div class="navigation__auth auth">
-                <button class="auth__login_button button" href="#login">Login</a>
-                <button class="auth__member_button button" href="#member">Become a member &rarr;</a>
+                <button class="auth__login-button button button--tertiary">Login</a>
+                <button class="button">Become a member &rarr;</a>
             </div>
         </nav>
     </header>
@@ -134,100 +134,114 @@
             <h2 class="download__title">Download Our App</h2>
             <p class="download__caption">Problems trying to resolve the conflict between<br/>
                 the two major realms of Classical physics: Newtonian mechanics </p>
-            <div class="download__item download-item">
-                <button class="download-item__button button">
-                    <img class="download-item__icon" src="./assets/Apple-icon.png" alt=""/>
-                    <div class="download-item__row">
-                        <p class="download-item__caption">Download on</p>
-                        <p class="download-item__caption_link">App Store</p>
-                    </div>
-                </button>
-                <button class="download-item__button button">
-                    <img class="download-item__icon" src="./assets/Google-icon.png" alt=""/>
-                    <div class="download-item__row">
-                        <p class="download-item__caption">Download on</p>
-                        <p class="download-item__caption_link">Google Play</p>
-                    </div>
-                </button>
-                <button class="download-item__button button">
-                    <img class="download-item__icon" src="./assets/Amazon-icon.png" alt=""/>
-                    <div class="download-item__row">
-                        <p class="download-item__caption">Download on</p>
-                        <p class="download-item__caption_link">Amazon.com</p>
-                    </div>
-                </button>
-                <button class="download-item__button button">
-                    <img class="download-item__icon" src="./assets/Windows-icon.png" alt=""/>
-                    <div class="download-item__row">
-                        <p class="download-item__caption">Download on</p>
-                        <p class="download-item__caption_link">Windows Store</p>
-                    </div>
-                </button>
+            <div class="download__list row">
+                <div class="col-md-3">
+                    <a href="#" class="download-item__button">
+                        <img class="download-item__icon" src="./assets/Apple-icon.png" alt=""/>
+                        <div class="download-item__row">
+                            <p class="download-item__caption">Download on</p>
+                            <p class="download-item__caption_link">App Store</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="download-item__button">
+                        <img class="download-item__icon" src="./assets/Google-icon.png" alt=""/>
+                        <div class="download-item__row">
+                            <p class="download-item__caption">Download on</p>
+                            <p class="download-item__caption_link">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="download-item__button">
+                        <img class="download-item__icon" src="./assets/Amazon-icon.png" alt=""/>
+                        <div class="download-item__row">
+                            <p class="download-item__caption">Download on</p>
+                            <p class="download-item__caption_link">Amazon.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="download-item__button">
+                        <img class="download-item__icon" src="./assets/Windows-icon.png" alt=""/>
+                        <div class="download-item__row">
+                            <p class="download-item__caption">Download on</p>
+                            <p class="download-item__caption_link">Windows Store</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="pricing" id="pricing">
             <h2 class="pricing__title">Pricing</h2>
             <p class="pricing__caption">Problems trying to resolve the conflict between<br/> 
-               the two major realms of Classical physics: Newtonian mechanics </p>
-            <div class="pricing__item pricing-item">
-                <div class="pricing-item__pricing col-md-6">
-                    <div class="pricing-item__description">
-                        <h3 class="pricing-item__title">FREE</h3>
-                        <p class="pricing-item__caption">
-                            Most calendars are designed<br/> 
-                            for teams. Slate is designed<br/> 
-                            for freelancers who want<br/>
-                            a simple way
-                        </p>
-                    </div>
-                    <div class="pricing-item__divide pricing-divide">
-                        <div class="pricing-divide__column">
-                            <h2 class="pricing-divide__money">0</h2>
-                            <div class="pricing-divide__float">
-                                <h3 class="pricing-divide__dollar">$</h3>
-                                <h5 class="pricing-divide__month">Per Month</h5>
-                            </div>
+                the two major realms of Classical physics: Newtonian mechanics </p>
+            <div class="pricing__list row">
+                <div class="col-md-6">
+                    <div class="pricing-item">
+                        <div class="pricing-item__description">
+                            <h3 class="pricing-item__title">FREE</h3>
+                            <p class="pricing-item__caption">
+                                Most calendars are designed<br/> 
+                                for teams. Slate is designed<br/> 
+                                for freelancers who want<br/>
+                                a simple way
+                            </p>
                         </div>
-                        <button class="pricing-divide__button">Try for free</button>
+                        <div class="pricing-item__divide pricing-divide">
+                            <div class="pricing-divide__column">
+                                <h2 class="pricing-divide__money">0</h2>
+                                <div class="pricing-divide__float">
+                                    <h3 class="pricing-divide__dollar">$</h3>
+                                    <h5 class="pricing-divide__month">Per Month</h5>
+                                </div>
+                            </div>
+                            <button class="pricing-divide__button">Try for free</button>
+                        </div>
                     </div>
                 </div>
-                <div class="pricing-item__pricing col-md-6">
-                    <div class="pricing-item__description">
-                        <h3 class="pricing-item__title">STANDARD</h3>
-                        <p class="pricing-item__caption">
-                            Most calendars are designed<br/> 
-                            for teams. Slate is designed<br/> 
-                            for freelancers who want<br/>
-                            a simple way
-                        </p>
-                    </div>
-                    <div class="pricing-item__divide pricing-divide">
-                        <div class="pricing-divide__column">
-                            <h2 class="pricing-divide__money">19</h2>
-                            <div class="pricing-divide__float">
-                                <h3 class="pricing-divide__dollar">$</h3>
-                                <h5 class="pricing-divide__month">Per Month</h5>
-                            </div>
+                <div class="col-md-6">
+                    <div class="pricing-item">
+                        <div class="pricing-item__description">
+                            <h3 class="pricing-item__title">STANDARD</h3>
+                            <p class="pricing-item__caption">
+                                Most calendars are designed<br/> 
+                                for teams. Slate is designed<br/> 
+                                for freelancers who want<br/>
+                                a simple way
+                            </p>
                         </div>
-                        <button class="pricing-divide__button">Try for free</button>
+                        <div class="pricing-item__divide pricing-divide">
+                            <div class="pricing-divide__column">
+                                <h2 class="pricing-divide__money">19</h2>
+                                <div class="pricing-divide__float">
+                                    <h3 class="pricing-divide__dollar">$</h3>
+                                    <h5 class="pricing-divide__month">Per Month</h5>
+                                </div>
+                            </div>
+                            <button class="pricing-divide__button">Try for free</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="request">
-            <div class="request__main">
-                <h2 class="request__title">We Have Branches All<br/>Over The World</h2>
-                <p class="request__caption">
-                    The gradual accumulation of information about atomic and<br/> 
-                    small-scale behaviour during the first quarter of the 20th<br/>
-                    century, which gave some indications about how small things<br/> 
-                    do behave, produced an increasing confusion which was<br/> 
-                    Heisenberg, and Born.
-                </p>
+            <div class="request__header">
+                <div class="request__main">
+                    <h2 class="request__title">We Have Branches All<br/>Over The World</h2>
+                    <p class="request__caption">
+                        The gradual accumulation of information about atomic and<br/> 
+                        small-scale behaviour during the first quarter of the 20th<br/>
+                        century, which gave some indications about how small things<br/> 
+                        do behave, produced an increasing confusion which was<br/> 
+                        Heisenberg, and Born.
+                    </p>
+                </div>
+                <img class="request__earth" src="./assets/earth.png" title="Earth" alt=""/>
             </div>
-            <img class="request__earth" src="./assets/earth.png" title="Earth" alt=""/>
             <div class="request__book request-book">
                 <img class="request-book__icon" src="./assets/man-book.png" title="Man in white" alt=""/>
                 <form class="request-book__form" title="Book Appointment"  method="POST">
@@ -269,23 +283,23 @@
     </main>
 
     <footer class="footer container">
-        <section class="footer__link">
-            <h2 class="footer__item">Get in Touch</h2>
-            <p class="footer__paragraph">the quick fox jumps over the lazy dog</p>
-            <ul class="footer__list" class="footer__list">
-                <li>
-                    <a href="#">Facebook</a>
+        <div class="footer__link">
+            <h2 class="footer__title">Get in Touch</h2>
+            <p class="footer__caption">the quick fox jumps over the lazy dog</p>
+            <ul class="footer__list footer-list">
+                <li class="footer-list__item">
+                    <a href="#"><img src="./assets/Facebook-icon.png" alt=""/></a>
                 </li>
-                <li>
-                    <a href="#">Instagram</a>
+                <li class="footer-list__item">
+                    <a href="#"><img src="./assets/instagram-icon.png" alt=""/></a>
                 </li>
-                <li>
-                    <a href="#">Twitter</a>
+                <li class="footer-list__item">
+                    <a href="#"><img src="./assets/Twitter-icon.png" alt=""/></a>
                 </li>
             </ul>
-        </section class="footer__information">
-        <section>
-            <h2 class="footer__item">Company info</h2>
+        </div>
+        <div class="footer__information">
+            <h2 class="footer__title">Company info</h2>
             <ul class="footer__list">
                 <li>
                     <a href="about.html">About Us</a>
@@ -300,9 +314,9 @@
                     <a href="blog.html">Blog</a>
                 </li>
             </ul>
-        </section>
-        <section class="footer__features">
-            <h2 class="footer__item">Features</h2>
+        </div>
+        <div class="footer__features">
+            <h2 class="footer__title">Features</h2>
             <ul class="footer__list">
                 <li>
                     <a href="marketing.html">Business Marketing</a>
@@ -317,9 +331,9 @@
                     <a href="support.html">Unlimited Support</a>
                 </li>
             </ul>
-        </section>
-        <section class="footer__others">
-            <h2 class="footer__item">Resources</h2>
+        </div>
+        <div class="footer__others">
+            <h2 class="footer__title">Resources</h2>
             <ul class="footer__list">
                 <li>
                     <a href="#download">IOS &amp; Android</a>
@@ -334,7 +348,7 @@
                     <a href="api.html">API</a>
                 </li>
             </ul>
-        </section>
+        </div>
     </footer>
     
     <section class="cabinet modal-login">
