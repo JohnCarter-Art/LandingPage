@@ -216,7 +216,7 @@ a:hover, a:focus {
     &__header {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     &__title {
