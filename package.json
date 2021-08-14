@@ -4,11 +4,14 @@
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn run parcel src/**.html --out-dir dist/dev",
+    "dev": "yarn run parcel src/index.html --out-dir dist/dev",
     "build": "yarn run parcel build src/**.html --out-dir dist/build"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
