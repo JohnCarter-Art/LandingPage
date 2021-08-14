@@ -168,9 +168,6 @@ a:hover, a:focus {
     }
 
     &__row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         padding: 0px;
     }
 }
@@ -182,21 +179,20 @@ a:hover, a:focus {
     border: 1px solid #FFFFFF;
 
     &__col {
-        display: flex;
-        flex-direction: column;
+        align-self: center;
         width: 213px;
         height: 69px;
     }
 
     &__logo {
+        padding-top: 20px;
         margin-right: 20px;
-        width: 49.33px;
-        height: 37.33px;
+        width: max-content;
+        height: max-content;
     }
 
     &__title {
         margin: 0;
-        font-style: normal;
         font-weight: bold;
         @include fs-lh (16, 24);
         padding-bottom: 5px;
@@ -334,7 +330,7 @@ a:hover, a:focus {
 
 /*PRICING*/
 .pricing {
-    margin-bottom: 260px;
+    margin-bottom: 160px;
     text-align: center;
 
     &__title {
@@ -418,37 +414,42 @@ a:hover, a:focus {
 
 /*REQUEST*/
 .request {
-    margin-bottom: 134px;
-    display: flex;
-    flex-wrap: wrap;
 
     &__header {
-        padding: 50px 0px;
         display: flex;
-        justify-content: space-around;
+        margin-bottom: 100px; 
     }
 
     &__main {
-        margin-right: 30px;
+        padding: 35px 0px;
     }
 
     &__earth {
+        padding: 65px 0px;
         width: max-content;
         height: max-content;
     }
 
     &__title {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 15px;
         @include fs-lh (40, 57);
     }
 
     &__caption {
+        padding: 0px;
+        margin: 0px;
         @include fs-lh (14, 20);
     }
 }
+.request-item__earth {
+    justify-content: flex-end;
+}
 .request-book {
-    margin-left: 65px;
     display: flex;
-    
+    justify-content: center;
+
     &__title {
         text-align: center;
     }
@@ -481,42 +482,79 @@ a:hover, a:focus {
     border: 1px solid #23A6F0;
     }  
 }
-
+.test-bg {
+    background-color: #fff;
+    padding-top: 416px;
+    margin: 0 -15px;
+    margin-top: -282px;
+    max-width: none;
+}
 
 /*END OF REQUEST*/
 /*END OF MAIN*/
 
 /*FOOTER*/
 .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    
+    height: 338px;
+    align-items: center;    
 
     &__title {
+        margin: 0px;
+        padding: 0px;
         font-weight: bold;
         @include fs-lh (24, 32);
+        margin-bottom: 25px;
     }
+
     &__caption {
+        margin: 0px;
+        padding: 0px;
         font-weight: 500;
         @include fs-lh (14, 20);
+        margin-bottom: 25px;
     }
+    
     &__list {
+        margin: 0px;
+        padding: 0px;
         font-weight: 500;
         @include fs-lh (14, 24);
         list-style-type: none;
-        padding: 0;
-        margin-left: 0px;
+    }
+    
+    &__column {
+        margin-right: 30px;
     }
 }
+
 .footer-list {
     display: flex;
     flex-direction: row;
+
     &__item { 
         margin: 0px;
         margin-right: 22px;
     }
-    
-
 }
 /*END OF FOOTER*/
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 76px;
+    background-color: #FAFAFA;
+
+    &__title {
+        margin: 0px;
+        align-self: center;
+        @include fs-lh (14, 24);
+        color: #737373;
+        font-style: normal;
+        font-weight: 600;
+    }
+}
+
+.modal-login {
+    display: none;
+}
