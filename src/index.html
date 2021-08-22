@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
     <title>Finance website</title>
     <link text="text/css" rel="stylesheet" href="/styles/styles.scss">
-    <script type="text/javascript" src="script/login.js"></script>
+    <script type="text/javascript" src="script/login.js"></script>  
 </head>
 <body>
 
     <header class="header container">
         <nav class="navigation">
             <a class="navigation__logo" href="#">Brand name</a> 
-            <ul class="navigation__list">
+            <ul class="navigation__list hidden-md-max">
                 <li class="navigation__item">
                     <a class="navigation__link" href="#hero">Home</a>
                 </li>
@@ -35,15 +36,15 @@
     <main class="container">
 
         <section class="hero" id="hero">
-            <section class="hero__header">
+            <div class="hero__header">
                 <h1 class="hero__title">Financial<br/>Assistance With<br/>True Purpose</h1>
                 <p class="hero__caption">We know how large objects will act, <br/> but things on a small scale.</p>
                 <button class="button-financial-get" type="button">Get Quote Now</button>
                 <button class="button-financial-learn" type="button">Learn More</button>
-            </section>
-            <section class="hero__image">
+            </div>
+            <div class="hero__image">
                 <img src="./assets/mockup.png" class="hero__iPhone" title="iPhone 12 Red">
-            </section>
+            </div>
         </section>
 
         <section class="features">
@@ -56,62 +57,62 @@
             </section>
             <div class="features__table">
                 <ul class="features__row row">
-                    <div class="col-md-4">
-                        <li class="features__item features-item col-md-6">
+                    <li class="col-md-4 col-xs-12">
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5 class="features-item__title">Investment Trading</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>
-                        </li>
-                    </div>
-                    <div class="col-md-4">    
-                        <li class="features__item features-item col-md-6">
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-xs-12">    
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5  class="features-item__title">Support On Raising Funds</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>
-                        </li>
-                    </div>
-                    <div class="col-md-4">
-                        <li class="features__item features-item col-md-6">
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-xs-12">
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5  class="features-item__title">Financial Analysis</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>    
-                        </li>
-                    </div>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="features__row row">  
-                    <div class="col-md-4">  
-                        <li class="features__item features-item col-md-6">
+                    <li class="col-md-4 col-xs-12">  
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5  class="features-item__title">Taxation Planning</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>    
-                        </li>
-                    </div>
-                    <div class="col-md-4">
-                        <li class="features__item features-item col-md-6">
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-xs-12">
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5  class="features-item__title">Save money and tim</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>    
-                        </li>
-                    </div>
-                    <div class="col-md-4">
-                        <li class="features__item features-item col-md-6">
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-xs-12">
+                        <div class="features__item features-item">
                             <img class="features-item__logo" src="./assets/features-logo.png" alt=""/>
                             <div class="features-item__col">
                                 <h5  class="features-item__title">Outsourced Consulting Business</h5>
                                 <p class="features-item__caption">the quick fox jumps over the lazy dog</p>
                             </div>    
-                        </li>
-                    </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -147,7 +148,7 @@
             <p class="download__caption">Problems trying to resolve the conflict between<br/>
                 the two major realms of Classical physics: Newtonian mechanics </p>
             <div class="download__list row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <a href="#" class="download-item__button">
                         <img class="download-item__icon" src="./assets/Apple-icon.png" alt=""/>
                         <div class="download-item__row">
@@ -156,7 +157,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <a href="#" class="download-item__button">
                         <img class="download-item__icon" src="./assets/Google-icon.png" alt=""/>
                         <div class="download-item__row">
@@ -165,7 +166,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <a href="#" class="download-item__button">
                         <img class="download-item__icon" src="./assets/Amazon-icon.png" alt=""/>
                         <div class="download-item__row">
@@ -174,7 +175,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <a href="#" class="download-item__button">
                         <img class="download-item__icon" src="./assets/Windows-icon.png" alt=""/>
                         <div class="download-item__row">
@@ -191,7 +192,7 @@
             <p class="pricing__caption">Problems trying to resolve the conflict between<br/> 
                 the two major realms of Classical physics: Newtonian mechanics </p>
             <div class="pricing__list row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="pricing-item">
                         <div class="pricing-item__description">
                             <h3 class="pricing-item__title">FREE</h3>
@@ -214,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="pricing-item">
                         <div class="pricing-item__description">
                             <h3 class="pricing-item__title">STANDARD</h3>
@@ -242,7 +243,7 @@
     
         <section class="request">
             <div class="request__header row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="request__main">
                         <h2 class="request__title">We Have Branches All Over The World</h2>
                         <p class="request__caption">
@@ -254,11 +255,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 request-item__earth">
+                <div class="col-md-6 col-xs-12 request-item__earth">
                     <img class="request__earth" src="./assets/earth.png" title="Earth" alt=""/>
                 </div>
             </div>
-            <div class="request__book request-book row">
+            <div class="request__book request-book">
                 <img class="request-book__icon" src="./assets/man-book.png" title="Man in white" alt=""/>
                 <form class="request-book__form" title="Book Appointment"  method="POST">
                     <h3 class="request-book__title">Book Appointment</h3>
@@ -298,10 +299,12 @@
         </section>
         
     </main>
-    <div class="test-bg"></div>
+
+    <div class="background-cover"></div>
+
     <footer class="footer container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-12">
                 <div class="footer__column">
                     <h2 class="footer__title">Get in Touch</h2>
                     <p class="footer__caption">the quick fox jumps over the lazy dog</p>
@@ -318,7 +321,7 @@
                     </ul>
                 </div>
             </div> 
-            <div class="col-md-3"> 
+            <div class="col-md-3 col-xs-12"> 
                 <div class="footer__column">
                     <h2 class="footer__title">Company info</h2>
                     <ul class="footer__list">
@@ -337,7 +340,7 @@
                     </ul>
                 </div>
             </div>    
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-12">
                 <div class="footer__column">
                     <h2 class="footer__title">Features</h2>
                     <ul class="footer__list">
@@ -356,7 +359,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-12">
                 <div class="footer__column">
                     <h2 class="footer__title">Resources</h2>
                     <ul class="footer__list">
