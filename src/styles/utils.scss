@@ -8,3 +8,16 @@
     font-size: #{$font-size}px;
     line-height: lh($font-size, $line-height);
 }
+
+@each $breakpoint, $width in $breakpoints {
+    @include media-max($breakpoint) {
+        .hidden-#{$breakpoint}-max {
+            display: none !important;
+        }
+    }
+    @include media-min($breakpoint) {
+        .hidden-#{$breakpoint}-min {
+            display: none !important;
+        }
+    }
+}

@@ -15,25 +15,16 @@ $gutter: 15px;
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0 -#{$gutter};
 }
 
-$breakpoints: (
-    xs: 320px,
-    sm: 600px,
-    md: 940px,
-    lg: 1200px,
-    xl: 1600px,
-);
-
-$cols: 12;
-
 @each $breakpoint, $width in $breakpoints {
-    @for $col from 1 to $cols {
-        @media (min-width: $width) {
+    @for $col from 1 through $cols {
+        @include media-min($breakpoint) {
             .col-#{$breakpoint}-#{$col} {
                 display: flex;
+                justify-content: center;
                 width: math.percentage(math.div($col, $cols));
                 padding: $gutter;
             }
