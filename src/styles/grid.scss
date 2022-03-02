@@ -24,6 +24,7 @@ $gutter: 15px;
         @include media-min($breakpoint) {
             .col-#{$breakpoint}-#{$col} {
                 display: flex;
+                justify-content: center;
                 width: math.percentage(math.div($col, $cols));
                 padding: $gutter;
             }
